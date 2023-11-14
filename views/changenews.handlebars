@@ -1,0 +1,31 @@
+<section>
+    {{> menu}}
+    <div id="news">
+        <div id="news-columns">
+            <div id="changenews-text">
+                <h1>News</h1>
+                <a id="create" href="/createnews" >Create New</a>
+                <div id="newsitems">
+                {{#each news}}
+                    <div id="newsitem">
+                        <div id="newsitems-text">
+                            <h1>{{title}}</h1>
+                            <span>{{text}}</span>
+                        </div>
+                        <div id="change-btns">
+                            <div id="btns">
+                                <a href="/editnews/{{Id}}">Edith</a>
+                            <form action="/delete/{{Id}}" method="post">
+                                <input type="submit" value="Delete" />
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+

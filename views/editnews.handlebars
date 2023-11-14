@@ -1,0 +1,29 @@
+<section>
+    {{> menu}}
+    <div id="news">
+        <div id="news-columns">
+            <div id="editnews-text">
+                {{#each news}}
+                <form action="/editnews/{{Id}}" method="post" id="edit-form">
+                   <div>
+                        <div id="title-input">
+                            <h1>Title</h1>
+                            <input name="Title" value="{{title}}"/>
+                        </div>
+                        <div id="text-input"> 
+                            <h1>Text</h1>
+                            <textarea name="Text" id="" cols="30" rows="10">{{text}}</textarea>
+                        </div>
+                        <div id="input-btn">
+                            <input type="submit" value="Update" class="submit"/>
+                            <a href="/changenews">Cancel</a>
+                        </div>
+                   </div>
+                </form> 
+                {{/each}}
+            </div>
+            
+        </div>
+    </div>
+</section>
+

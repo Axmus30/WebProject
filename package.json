@@ -1,0 +1,21 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Code for web design project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Portfolio website"
+  ],
+  "author": "Axel Östan",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.17.3",
+    "sqlite3": "^5.1.6"
+  }
+}

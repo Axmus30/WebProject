@@ -1,0 +1,17 @@
+<section>
+    {{> menu}}
+    <div id="news">
+        <div id="news-columns">
+            <div id="news-text">
+                <h1>News</h1>
+                {{#each news}}
+                <div>
+                    <h1>{{title}}</h1>
+                    <span>{{text}}</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+

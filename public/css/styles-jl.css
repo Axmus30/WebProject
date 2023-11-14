@@ -1,0 +1,493 @@
+:root {
+    --background: #22223b;
+    --textColor: #f2e9e4;
+    --borderColor: #c9ada7;
+    --frameColor: #4a4e69;
+}
+
+/* main */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: content-box;
+
+}
+section{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    width: 100%;
+    min-height: 100vh;
+    color: var(--textColor);
+}
+
+/* menu */
+#menu{
+    width: 100%;
+    border-bottom: 2px solid var(--borderColor);
+    padding-bottom: 10px;
+}
+#menu div{
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
+}
+#menu div a{
+    color: var(--textColor);
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 3vh;
+}
+#menu div a:hover{
+    opacity: 0.7;
+}
+/* Home */
+
+#home{
+    width: 90%;
+    margin: auto;   
+}
+#home-columns{
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+}
+
+#home-columns #home-text{
+    width: 40%;
+    text-align: left;
+    color: var(--textColor);
+    margin-top: 150px;
+    margin-left: 125px;
+    height: 30vh;
+}
+
+#home-columns #home-text h1{
+    width: 30vh;
+    border-bottom: 1px solid var(--textColor);
+}
+#home-columns #home-text h2{
+    color: var(--borderColor);
+    margin-top: 10px;
+}
+#home-columns #home-img{
+    width: 50%;
+    height: 70vh;
+    text-align: right;
+}
+#home-columns #home-img div{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+#home-columns #home-img img{
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 65vh;
+}
+
+/* Projects */
+#projects{
+    width: 100%;
+    margin-top: 70px;
+    overflow: hidden; 
+}
+#projects-columns{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-height: 80vh;
+    margin: auto;
+}
+#projects-columns a{
+    height: 30vh;
+    width: 40vh;
+    transition: 0.5s;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#projects-columns a:hover img{
+    opacity: 0.7;
+}
+#projects-columns #frame{
+    height: 30vh;
+    width: 40vh;
+    display: block;
+    overflow: hidden;
+}
+#projects-columns div img{
+    border: 2px solid lightgray;
+    height: 35vh;
+}
+#frame-text{
+    color: var(--textColor);
+}
+#frame h1{
+    text-decoration: none;
+    font-size: 3vh;
+    width: 30vh;
+    border-bottom: 2px solid var(--borderColor);
+}
+#frame h2{
+    font-size: 2.5vh;
+}
+
+/* project */
+#project{
+    width: 90%;
+    margin: auto;  
+    overflow: hidden; 
+    
+}
+
+#project-columns{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+#project-columns #proj-frame{
+    color: var(--textColor);
+    width: 80%;
+    height: 75vh;
+    margin: auto;
+}
+#project-columns #proj-frame #img-frame{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+#project-columns #proj-frame img{
+    width: 80vh;
+    text-align: center;
+}
+#proj-frametext{
+    margin-top: 30px;
+}
+
+
+/* about */
+
+#about-section{
+    border-bottom: 1px solid var(--borderColor);
+}
+#about{
+    width: 90%;
+    margin: auto;   
+}
+
+#about-columns{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;    
+}
+#about-columns div{
+    height: 50vh;
+}
+#about-columns #about-text{
+    width: 50%;
+    text-align: center;
+    color: #E5E7E6;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+#about-columns #about-text h2{
+    font-size: 3vh;
+}
+#about-columns #about-skills{
+    width: 50%;
+    text-align: left;
+    color: #E5E7E6;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+#about-columns #about-skills ul{
+    list-style: none;
+}
+#about-skills ul li{
+    display: flex;
+}
+#about-skills ul li h3{
+    font-size: 3vh;
+}
+#about-skills ul li span{
+    font-size: 2.5vh;
+    margin-left: 20px;
+}
+
+#faq{
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;   
+    overflow: hidden;
+}
+#faq-columns{
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    min-height: 80vh;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#faq-columns h1{
+    color: white;
+}
+#questions{
+    color: white;
+    margin-top: 70px;
+}
+#questions div{
+    min-height: 15vh;
+    margin-top: 40px;
+}
+#questions h1{
+    font-size: 3vh;
+}
+#questions h3{
+    font-size: 2.75vh;
+}
+
+#contact{
+    width: 90%;
+    height: 90vh;
+    margin: auto;   
+    overflow: hidden; 
+}
+
+/* Contact */
+#contact-columns{
+    width: 100%;
+    display: block;
+    margin-top: 100px;
+    height: 80vh;
+    text-align: center;
+}
+#contact-text{
+    margin-top: 200px;
+}
+#contact-text h1{
+    color: white;
+    font-size: 4vh;
+}
+#contact-info{
+    margin-top: 100px;
+}
+#contact-info h1{
+    font-size: 2.5vh;
+    margin-top: 20px;
+}
+#links{
+    margin-top: 100px;
+}
+#links a{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/* News */
+#news{
+    width: 90%;
+    margin: auto;
+}
+#news-columns{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+#news-text{
+    margin-top: 80px;
+}
+#news-text h1{
+    color: white;
+    font-size: 4vh;
+}
+#news-text div{
+    color: white;
+    margin-top: 30px;
+    min-height: 12.5vh;
+}
+#news-text div h1{
+    font-size: 3vh;
+}
+
+
+/* Login */
+#login{
+    width: 90%;
+    margin: auto;   
+}
+#login-columns{
+    width: 100%;
+    display: block;
+    margin-top: 150px;
+    color: white;
+    text-align: center;
+}
+#login-form{
+    margin-top: 100px;
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#login-form input{
+    margin: auto;
+    display: block;
+    background-color: var(--textColor);
+    color: var(--background);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    height: 3.5vh;
+    min-width: 7vh;
+}
+#login-btn{
+    background-color: var(--textColor);
+}
+/* Admin page */
+#admin{
+    width: 90%;
+    margin: auto;   
+    overflow: hidden; 
+}
+
+#admin-columns{
+    width: 100%;
+    display: block;
+    margin-top: 140px;
+    height: 40vh;
+    color: white;
+    text-align: center;
+}
+
+#admin-columns div{
+    margin-top: 100px;
+}
+#admin-columns div a{
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: black;
+}
+/* change News */
+#changenews-text{
+    color:white;
+    margin-top: 80px;
+}
+
+#newsitems{
+    width: 100%;
+    margin-top: 30px;
+    
+}
+#newsitem{
+    margin: auto;
+    width: 80%;
+    min-height: 25vh;
+    text-align: center;
+    
+}
+#newsitem #change-btns{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    
+}
+
+#btns{
+    margin-top: 10px;
+    margin-left: 35%;
+    display: flex;
+    width: 80%;
+}
+#btns a{
+    padding: 3px 10px;
+    background-color: var(--textColor);
+    color: var(--background);
+    border-radius: 5px;
+    position: relative;
+    font-size: 2vh;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#btns form input{
+    background-color: var(--textColor);
+    color: var(--background);
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Edit News */
+#editnews-text{
+    margin-top: 100px;
+    color:white;
+    width: 100%;
+}
+
+#edit-form{
+    display: block;
+    overflow: hidden;
+}
+#title-input input{
+    background-color: var(--textColor);
+    border: none;
+    border-radius: 5px;
+}
+#editnews-text div h1{
+    font-size: 4vh;
+}
+#text-input{
+    margin-top: 10px;
+}
+#text-input textarea{
+    border-radius: 5px;
+    background-color: var(--textColor);
+}
+#input-btn{
+    margin-top: 15px;
+}
+#input-btn input{
+    padding: 2px 15px;
+    background-color: var(--textColor);
+    color: var(--background);
+    border-radius: 5px;
+    position: relative;
+    font-size: 2vh;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+#input-btn a{
+    padding: 5px 15px;
+    background-color: var(--textColor);
+    color: var(--background);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    font-size: 2vh;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+/* Create  News */
+#create{
+    padding: 5px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    position: relative;
+    font-size: 2vh;
+    text-decoration: none;
+     
+}
+

@@ -1,0 +1,15 @@
+<section>
+    {{> menu}}
+    <div id="login">
+        <div id="login-columns">
+            <h1>Login</h1>
+            <form action="/auth" method="post" id="login-form">
+				<label for="username"></label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password"></label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login" id="login-btn">
+			</form>
+        </div>
+    </div>
+</section>

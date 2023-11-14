@@ -1,0 +1,20 @@
+<section>
+    {{> menu}}
+    <div id="project">
+        <div id="project-columns">
+            {{#each proj}}
+                <div id="proj-frame">
+                    <div id="img-frame">
+                        <img src="{{img}}" alt="">
+                    </div>
+
+                    <div id="proj-frametext" >
+                        <h1>{{Name}}</h1>
+                        <span>{{Desc}}</span>
+                    </div>
+                </div>
+                    
+            {{/each}}
+        </div>
+    </div>
+</section>
